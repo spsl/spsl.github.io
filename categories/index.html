@@ -331,17 +331,6 @@
               </span>
             </div>
           
-            <div class="archive-post">
-              <time datetime="2020-08-20" class="archive-post-time">
-                2020-08-20
-              </time>
-              <span class="archive-post-title">
-                <a href="/template/" class="archive-post-link">
-                  关于我
-                </a>
-              </span>
-            </div>
-          
           
       </section>
     
@@ -466,6 +455,10 @@
 
   
   
+    <span id="busuanzi_container">
+      访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+    </span>
+  
 
   
 </div>
@@ -500,7 +493,21 @@
 
 
 
-
+<script id="baidu_push">
+  (function(){
+    if (window.location.hostname === 'localhost') return;
+    var bp = document.createElement('script'); bp.async = true;
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+      bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+      bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+  })();
+</script>
 
 
 
@@ -512,6 +519,8 @@
 
 
 
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 

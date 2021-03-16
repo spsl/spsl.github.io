@@ -37,13 +37,6 @@
   </url>
   
   <url>
-    <loc>/template/</loc>
-    <lastmod>2020-08-28T21:41:52+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>/categories/</loc>
     <lastmod>2020-09-28T21:41:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
