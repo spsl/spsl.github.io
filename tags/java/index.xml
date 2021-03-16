@@ -6,14 +6,32 @@
     <description>Recent content in java on 好威武支持有希望</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 20 Aug 2020 21:38:52 +0800</lastBuildDate><atom:link href="/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Sep 2020 21:38:52 +0800</lastBuildDate><atom:link href="/tags/java/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>AQS</title>
-      <link>/post/test/</link>
+      <title>AQS是什么</title>
+      <link>/post/aqs/</link>
+      <pubDate>Sun, 20 Sep 2020 21:38:52 +0800</pubDate>
+      
+      <guid>/post/aqs/</guid>
+      <description>AQS是什么 AQS的数据结构 什么是公平锁 </description>
+    </item>
+    
+    <item>
+      <title>Java对象比较器</title>
+      <link>/post/java-object-diff/</link>
+      <pubDate>Fri, 21 Aug 2020 21:38:52 +0800</pubDate>
+      
+      <guid>/post/java-object-diff/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>关于我</title>
+      <link>/template/</link>
       <pubDate>Thu, 20 Aug 2020 21:38:52 +0800</pubDate>
       
-      <guid>/post/test/</guid>
-      <description>AQS是什么 数据结构 什么是公平锁 </description>
+      <guid>/template/</guid>
+      <description></description>
     </item>
     
   </channel>
