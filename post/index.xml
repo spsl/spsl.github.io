@@ -1,1 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 好威武支持有希望</title><link>/post/</link><description>Recent content in Posts on 好威武支持有希望</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 20 Sep 2020 21:38:52 +0800</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml"/><item><title>AQS是什么</title><link>/post/aqs/</link><pubDate>Sun, 20 Sep 2020 21:38:52 +0800</pubDate><guid>/post/aqs/</guid><description>AQS是什么 AQS的数据结构 什么是公平锁</description></item><item><title>Java对象比较器</title><link>/post/java-object-diff/</link><pubDate>Fri, 21 Aug 2020 21:38:52 +0800</pubDate><guid>/post/java-object-diff/</guid><description/></item><item><title>MySQL中的索引</title><link>/post/mysql/</link><pubDate>Thu, 20 Aug 2020 21:38:52 +0800</pubDate><guid>/post/mysql/</guid><description>MySQL中的索引</description></item><item><title>Redis几种数据结构和实现</title><link>/post/redis/</link><pubDate>Thu, 20 Aug 2020 21:38:52 +0800</pubDate><guid>/post/redis/</guid><description/></item><item><title>redis缓存更新一致性问题</title><link>/post/redis-cache-consistency/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/post/redis-cache-consistency/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 好威武支持有希望</title><link>/post/</link><description>Recent content in Posts on 好威武支持有希望</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 04 May 2021 15:16:36 +0800</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Redis哨兵机制总结</title><link>/post/redis-sentinel/</link><pubDate>Tue, 04 May 2021 15:16:36 +0800</pubDate><guid>/post/redis-sentinel/</guid><description>简单总结下redis的哨兵机制
+哨兵机制是什么
+哨兵就是一台运行在特殊状态的redis服务器, 用来监控master节点和slave节点以及其他sentinel节点的状态, 在master节点下线时, 从slave节点中选择新的master节点
+解决了什么问题
+解决了redis服务端的高可用, 即master节点宕机之后, 自动切换slave节点来继续提供服务
+不能解决什么问题
+不能解决的数据不丢失的问题, 就是在master节点宕机时, 因为master同步数据到slave是异步同步的方式, 所以是有时间差的,在这个时间差内更新的数据会丢失掉 怎么启动哨兵服务
+有两种方式启动哨兵服务 $ redis-sentinel /path/to/your/config/sentinel.conf $ redis-server /path/to/your/config/sentinel.conf —-sentinel 启动过程
+初始化服务器
+将普通redis服务端的代码替换为sentinel模式的代码
+初始化sentinel状态
+根据配置, 初始化sentinel监控的主服务器列表
+创建连向主服务器的连接
+会创建两个连接,
+一个是命令连接, 用于向服务器发送命令
+一个是专门订阅服务器的__sentinel__:hello频道
+工作过程
+获取各种服务器的状态并建立相应的连接</description></item><item><title>AQS是什么</title><link>/post/aqs/</link><pubDate>Sun, 20 Sep 2020 21:38:52 +0800</pubDate><guid>/post/aqs/</guid><description>AQS是什么 AQS的数据结构 什么是公平锁</description></item><item><title>Java对象比较器</title><link>/post/java-object-diff/</link><pubDate>Fri, 21 Aug 2020 21:38:52 +0800</pubDate><guid>/post/java-object-diff/</guid><description/></item><item><title>MySQL中的索引</title><link>/post/mysql/</link><pubDate>Thu, 20 Aug 2020 21:38:52 +0800</pubDate><guid>/post/mysql/</guid><description>MySQL中的索引</description></item><item><title>Redis几种数据结构和实现</title><link>/post/redis/</link><pubDate>Thu, 20 Aug 2020 21:38:52 +0800</pubDate><guid>/post/redis/</guid><description/></item><item><title>redis缓存更新一致性问题</title><link>/post/redis-cache-consistency/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/post/redis-cache-consistency/</guid><description/></item></channel></rss>
